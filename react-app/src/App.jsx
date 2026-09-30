@@ -8,7 +8,7 @@ const initialOrders = [{"id":1 , "dish":"Pollo" , "status":"pending"},
 
 /* Primer componente*/
 function Pedido(){
-  {/* Estados iniciales */}
+  /* Estados iniciales */
   const [newDish, setNewDish] = useState("");
   const [listaPedidos, setListaPedidos] = useState(initialOrders);
 
