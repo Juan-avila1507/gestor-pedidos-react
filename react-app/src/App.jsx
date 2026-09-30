@@ -12,7 +12,7 @@ function Pedido(){
   const [newDish, setNewDish] = useState("");
   const [listaPedidos, setListaPedidos] = useState(initialOrders);
 
-  {/* Filtrados de lista */}
+  /* Filtrados de lista */
   const ordersPending = listaPedidos.filter((order)=> order.status === "pending") 
   const lenghtOrdersPending = ordersPending.length
 
@@ -39,7 +39,7 @@ function Pedido(){
 
   
 
-  {/* Funcion completar pedido por id */}
+  /* Funcion completar pedido por id */
   const completarPedido = (idABuscar) => {
     const listaActualizada = listaPedidos.map((order) => {
 
@@ -57,7 +57,7 @@ function Pedido(){
     setListaPedidos(listaActualizada);
   };
 
-  {/* Lo que retorna el componente */}
+  /* Lo que retorna el componente */
   return (
     <div>
       <input placeholder="Ingrese plato deseado" value={newDish} onChange={(e)=> setNewDish(e.target.value)}/>
